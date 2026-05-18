@@ -513,7 +513,12 @@ footer {
   display: flex;
   gap: 28px;
   background: transparent;
+  background-color: transparent;
   border: none;
+  border-bottom: none;
+  padding: 0;
+  position: static;
+  z-index: auto;
 }
 
 .footer-nav a {
