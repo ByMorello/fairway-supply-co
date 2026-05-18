@@ -35,3 +35,12 @@ skjermstørrelser.
 - Kommenter seksjoner tydelig i CSS
 - Behold eksisterende klassenavn med mindre du 
   har god grunn til å endre dem
+
+## Typografi — orddeling
+Aldri bruk automatisk orddeling (hyphens) noe sted på siden.
+Alle elementer skal ha:
+hyphens: none;
+-webkit-hyphens: none;
+word-break: normal;
+Overskrifter (h1-h6) skal alltid ha word-break: keep-all;
+Dette gjelder alle fremtidige endringer uten unntak.

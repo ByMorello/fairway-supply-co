@@ -4,6 +4,21 @@
   padding: 0;
 }
 
+* {
+  hyphens: none;
+  -webkit-hyphens: none;
+  word-break: normal;
+  overflow-wrap: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  hyphens: none;
+  -webkit-hyphens: none;
+  word-break: keep-all;
+  overflow-wrap: normal;
+  white-space: normal;
+}
+
 :root {
   --bg: #F5F4EF;
   --green-primary: #0F3B2E;
