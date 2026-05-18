@@ -103,15 +103,14 @@ nav {
 
 #hero {
   display: flex;
-  min-height: 560px;
-  justify-content: center;
   align-items: stretch;
+  min-height: calc(100vh - 61px);
 }
 
 .hero-image {
   width: 55%;
-  overflow: hidden;
   flex-shrink: 0;
+  overflow: hidden;
 }
 
 .hero-image img {
@@ -125,12 +124,11 @@ nav {
 
 .hero-content {
   width: 45%;
-  background-color: var(--bg);
-  padding: 56px 52px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
+  padding: 56px 52px;
+  background-color: var(--bg);
 }
 
 .kicker {
@@ -519,4 +517,101 @@ footer {
   color: #F5F4EF;
   opacity: 0.4;
   letter-spacing: 0.04em;
+}
+
+@media (max-width: 1024px) {
+  nav {
+    padding: 18px 32px;
+  }
+  #hero {
+    flex-direction: column;
+    min-height: auto;
+  }
+  .hero-image {
+    width: 100%;
+    height: 56vw;
+    max-height: 480px;
+  }
+  .hero-content {
+    width: 100%;
+    padding: 48px 32px;
+  }
+  .hero-content h1 {
+    font-size: 64px;
+  }
+  #material .material-inner {
+    grid-template-columns: 1fr;
+  }
+  .features-inner {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  #cta {
+    padding: 72px 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 16px 20px;
+  }
+  .nav-left {
+    display: none;
+  }
+  .logo {
+    font-size: 9px;
+  }
+  .hero-content {
+    padding: 40px 24px;
+  }
+  .hero-content h1 {
+    font-size: 52px;
+  }
+  .features-inner {
+    padding: 0;
+  }
+  #features {
+    padding: 56px 24px;
+  }
+  #material {
+    padding: 64px 24px;
+  }
+  .material-inner {
+    gap: 40px;
+  }
+  #cta {
+    padding: 64px 24px;
+  }
+  #cta h2 {
+    font-size: 38px;
+  }
+  footer {
+    padding: 32px 24px;
+  }
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+  .footer-nav {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 44px;
+  }
+  .btn-hero {
+    width: 100%;
+    text-align: center;
+  }
+  .btn-cta {
+    width: 100%;
+    text-align: center;
+  }
+  #cta h2 {
+    font-size: 32px;
+  }
 }
